@@ -1,0 +1,6 @@
+<h1>Inside Parent Component : App</h1>
+
+<app-child (LaserLight)="Msg = $event"></app-child>  <!-- if any one want to resecive and sebd data to eachother we need to write logic in this place -->
+
+<p>{{Msg}}</p>
+<router-outlet ></router-outlet>

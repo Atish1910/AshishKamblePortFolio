@@ -1,0 +1,42 @@
+<h1>Demonstarateion Of Structral Drective</h1>
+<h1>Demonstarateion Of Ngif</h1>
+
+<h2 *ngIf="nonveg">You selected NonVeg menu</h2>
+
+
+<div *ngIf="nonveg ; then ifblock ; else elseblock"></div>
+
+
+<ng-template #ifblock>
+  <h2>Plz consider below nonveg menu options</h2>
+  <h3>Chicken Tikka</h3>
+  <h3>Butter chicken</h3>
+  <h3>Chicken Biryani</h3>
+</ng-template>
+
+
+
+<ng-template #elseblock>
+  <h2>Plz consider below veg menu options</h2>
+  <h3>paneer Tikka</h3>
+  <h3>Butter paneer</h3>
+  <h3>paneer Biryani</h3>
+</ng-template>
+
+
+<h1>Demonstration of ngFor</h1>
+
+<div *ngfor="let values of Technology">
+  <h2> {{values}} </h2>
+</div>
+
+<h1>Demonstration of ngswitch</h1>
+
+<div [ngSwitch]="Batch">
+  <div *ngSwitchCase="'PPA'">You Select PPA Batech</div>
+  <div *ngSwitchCase="'LB'">You Select LB Batech</div>
+  <div *ngSwitchCase="'Python'">You Select Python Batech</div>
+  <div *ngSwitchDefalut>You Selected Wrong Option</div>
+</div>
+
+<router-outlet></router-outlet>

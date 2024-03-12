@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+h2,h1,h3{
+    color: red;
+    padding: 10px 10px;
+    border: solid 1px;
+}
+p{
+    color: blue;
+}
